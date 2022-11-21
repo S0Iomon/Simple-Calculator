@@ -88,6 +88,7 @@ div #numbers button{
     border: solid #66bab6 2px;
     border-radius: 100px;
     font-size: 20px;
+    font-weight: bold;
 }
 
 div #numbers button:hover{
