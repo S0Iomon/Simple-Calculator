@@ -6,6 +6,9 @@ let startAgain = document.querySelector('.del')
 let multiply = document.querySelector('#multiply')
 let divide = document.querySelector('#divide')
 
+//for mobile
+let html = document.querySelector('body')
+
 for (let i = 0; i < items.length; i++){
     items[i].addEventListener('click', event => {
         if (answer.textContent == 0){
@@ -45,3 +48,6 @@ equals.addEventListener('click', event => {
 startAgain.addEventListener('click', event => {
     answer.textContent = 0;
 })
+
+html.style.width = window.screen.width
+html.style.height = window.screen.height
