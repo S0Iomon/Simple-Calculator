@@ -1,0 +1,129 @@
+html, body{
+    font-family: 'Unispace';
+    overflow: hidden;
+    background-color: #1b3f3d;
+}
+
+main{ 
+    display: flex;
+    justify-content: center;
+    height: 600px;
+}
+
+.grid{
+    background-color: #1d7874;
+    padding: 25px;
+    border: solid 5px #a1d7cb;
+    border-radius: 50px;
+}
+
+div #result {
+    background-color: #e64f52;
+    border: solid 1px #f35a5c;
+    font-size: 25px;
+    height: 50px;
+    border-radius: 50px;
+    color: #f4c095;
+    margin-top: 20px;
+}
+
+div #result #answer {
+    text-align: right;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+div #numbers {
+    display: grid; 
+    grid-template-columns: 100px 50px 50px 100px;
+    grid-template-rows: 100px 100px 100px 100px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+div #numbers #seven{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 1;
+    
+}
+div #numbers #four{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 2;
+}
+
+div #numbers #one{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 3;
+}
+
+div #numbers #last{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 4;
+}
+
+div #numbers button{
+    font-family: 'Unispace';
+    color: #1d7874;
+    padding: 20px;
+    background-color: #a1d7cb;
+    border: solid #66bab6 2px;
+    border-radius: 100px;
+}
+
+div #numbers #last .items, #equal{
+    padding: 20px;
+    color: #679289;
+}
+
+div #numbers #operations {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    display: grid;
+    grid-template-columns: 50px 9px 50px;
+    grid-template-rows:  50px 50px 50px 50px 50px 50px;
+}
+
+
+div #numbers #operations #minus{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+div #numbers #operations #plus{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+div #numbers #operations #ac{
+    grid-row: 7;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+div #numbers #operations #multiply{
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+div #numbers #operations #divide{
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+div .title {
+    text-align: center;
+    background-color: #66bab6;
+    color:#18615e;
+    padding: 3px;
+    border: solid 1px #66bab6;
+    border-radius: 200px;
+}
