@@ -75,6 +75,17 @@ div #numbers button{
     border-radius: 100px;
 }
 
+div #numbers button:hover{
+    animation-name: smooth;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes smooth{
+    100%{color: #a1d7cb;
+        background-color: #1d7874;}
+}
+
 div #numbers #last .items, #equal{
     padding: 20px;
     color: #679289;
