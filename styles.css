@@ -4,7 +4,7 @@
 }
 
 html, body{
-    font-family: 'Unispace', Unispace, 'Century Gothic';
+    font-family: 'Unispace', Unispace;
     overflow: hidden;
     background-color: #1b3f3d;
     text-align: center;
@@ -20,7 +20,7 @@ main{
 
 .grid{
     background-color: #1d7874;
-    padding: 25px;
+    padding: 10px;
     border: solid 5px #a1d7cb;
     border-radius: 50px;
     grid-column: 2;
@@ -161,59 +161,13 @@ div .title {
     border-radius: 200px;
 }
 
-@media screen and (max-width: 1000px) {
-    
-    main{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
 
-    .grid{
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-    }
-}
 
-@media screen and (max-width: 280px) {
-    .grid{
-        width: 70%;
-        height: 100%;
-    }
-
-    div #numbers button{
-        padding: 10px;
-        border-radius: 100px;
-        font-size: 20px;
-        font-weight: bold;
-    }
-
-    div #numbers #last .items, #equal{
-        padding: 10px;
-        color: #679289;
-    }
-    div #numbers #operations {
-        grid-column-start: 4;
-        grid-column-end: 5;
-        display: grid;
-        grid-template-columns: 25px 9px 31px;
-        grid-template-rows:  50px 50px 50px 50px 50px 50px;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    .grid{
-        width: 80%;
-        height: 100%;
-    }
-}
 
 .links{
     padding: 20px;
     text-align: center;
-    margin-top: -40px;
-    background-color: black;
+    margin-top: -50px;
 }
 .links li{
     display: inline-block;
@@ -223,5 +177,144 @@ div .title {
     border: solid 2px #e64f52;
     border-radius: 600px;
     width: 60px;
+    transition: padding 0.2s;
+    transition-timing-function: linear;
+}
+
+.links li img:hover {
+    border: solid 5px white;
+    padding: 10px;
+    margin-top: -20px;  
+}
+
+
+@media screen and (max-width: 1000px) {
+    main {
+        margin-top: 300px;
+        display: grid;
+        margin-left: 20px;
+    }
+
+    .links {
+        display: none;
+    }
+    .grid {
+        width: 200%;
+        background-color: #1b3f3d;
+        border: none;
+        grid-column: 1;
+    }
+    #answer {
+        font-size: 50px;
+    }
+    div #numbers {
+        font-size: 25px;
+    }
+    div #result{
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    main {
+        margin-top: 300px;
+        display: grid;
+        margin-left: 70px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        margin-top: 200px;
+        display: grid;
+        margin-left: -5px;
+    }
+    #answer {
+        font-size: 50px;
+    }
+    div #numbers {
+        font-size: 15px;
+    }
+    div #result{
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    main {
+        margin-top: 50px;
+        display: grid;
+        margin-left: -5px;
+    }
+    .grid {
+        width: 140%;
+    }
+    #answer {
+        font-size: 60px;
+    }
+    div #numbers {
+        font-size: 15px;
+    }
+    div #result{
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        margin-top: 100px;
+        display: grid;
+        margin-left: 10px;
+    }
+    .links {
+        display: none;
+    }
+    .grid {
+        width: 80%;
+        background-color: #1b3f3d;
+        border: none;
+        grid-column: 2;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    main {
+        margin-top: 30px;
+        display: grid;
+    }
+    .links {
+        display: none;
+    }
+    .grid {
+        width: 80%;
+        background-color: #1b3f3d;
+        padding: 25px;
+        border: none;
+        border-radius: 50px;
+        grid-column: 2;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    main {
+        margin-top: 20px;
+        display: grid;
+    }
+    .grid {
+        width: 50%;
+        background-color: #1b3f3d;
+        border: none;
+        border-radius: 50px;
+        grid-column: 2;
+    }
+    #answer {
+        font-size: 20px;
+    }
+    div #numbers {
+        font-size: 1px;
+    }
+    div #result{
+        height: 40px;
+    }
 }
 
