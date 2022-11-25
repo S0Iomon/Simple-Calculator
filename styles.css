@@ -25,7 +25,7 @@ html, body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    height: 80vh;
 }
 
 
@@ -160,7 +160,7 @@ div .title {
     text-align: center;
     background-color: #66bab6;
     color:#18615e;
-    padding: 3px;
+    padding: 10px;
     border: solid 1px #66bab6;
     border-radius: 200px;
 }
@@ -173,10 +173,11 @@ div .title {
 .links li{
     display: inline-block;
     text-decoration: none;
+    padding: 20px;
 }
 .links li img {
-    border: solid 10px #e64f52;
-    border-radius: 600px;
+    border: solid 5px #e64f52;
+    border-radius: 100px;
     width: 60px;
     transition: padding 0.3s;
     transition-timing-function: linear;
@@ -195,36 +196,73 @@ div .title {
     div .title{
         font-size: 30px;
     }
+
+    div #result{
+        width: 90%;
+    }
+    div #answer{
+        font-size: 30px;
+        font-weight: bolder;
+    }
 }
 
 @media screen and (max-width: 393px){
     .grid {
         height: 80vh;
     }
+    
+    div #answer{
+        font-size: 30px;
+        font-weight: bolder;
+    }
 
     div #numbers button {
-        padding: 10px;
+        padding: 20px;
         font-size: 16px;
     }
 
     div .title{
-        font-size: 15px;
+        font-size: 20px;
     }
     div #numbers #operations {
         padding: 1px;
-        margin-left: -30px;
+        margin-left: -15px;
     }
     div #numbers #last .items, #equal{
-        padding: 10px;
+        padding: 20px;
         color: #679289;
     }
 }
 
 @media screen and (max-width: 375px){
+    div #answer{
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+    div #numbers button {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    div .title{
+        font-size: 16px;
+    }
+    div #numbers #operations {
+        padding: 0.5px;
+    }
+    div #numbers #last .items, #equal{
+        padding: 15px;
+        color: #679289;
+    }
+}
+
+@media screen and (max-width: 280px){
     .grid {
         height: 80vh;
     }
 }
+
 
 
 
