@@ -3,18 +3,15 @@
     src: url(./design/unispace.ttf) format(ttf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 html, body{
-    font-family: 'Unispace', Unispace;
+    font-family: 'Ubuntu';
     overflow: hidden;
     background-color: #1b3f3d;
     text-align: center;
     margin: 0;
     padding: 0;
-}
-
-main{ 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
 }
 
 
@@ -24,6 +21,11 @@ main{
     border: solid 5px #a1d7cb;
     border-radius: 50px;
     grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
 }
 
 
@@ -35,12 +37,14 @@ div #result {
     border-radius: 50px;
     color: #f4c095;
     margin-top: 20px;
+    width: 50%;
 }
 
 div #result #answer {
-    text-align: right;
     margin-right: 50px;
     margin-top: 10px;
+    order: 2;
+    text-align: right;
 }
 
 div #numbers {
@@ -161,160 +165,66 @@ div .title {
     border-radius: 200px;
 }
 
-
-
-
 .links{
-    padding: 20px;
+    padding: 10px;
     text-align: center;
-    margin-top: -50px;
+    margin-top: -10px;
 }
 .links li{
     display: inline-block;
     text-decoration: none;
 }
 .links li img {
-    border: solid 2px #e64f52;
+    border: solid 10px #e64f52;
     border-radius: 600px;
     width: 60px;
-    transition: padding 0.2s;
+    transition: padding 0.3s;
     transition-timing-function: linear;
 }
 
 .links li img:hover {
     border: solid 5px white;
     padding: 10px;
-    margin-top: -20px;  
 }
-
-
-@media screen and (max-width: 1000px) {
-    main {
-        margin-top: 300px;
-        display: grid;
-        margin-left: 20px;
-    }
-
-    .links {
-        display: none;
-    }
-    .grid {
-        width: 200%;
-        background-color: #1b3f3d;
-        border: none;
-        grid-column: 1;
-    }
-    #answer {
-        font-size: 50px;
-    }
-    div #numbers {
+@media screen and (max-width: 912px){
+    div #numbers button {
+        padding: 20px;
         font-size: 25px;
     }
-    div #result{
-        height: 80px;
+
+    div .title{
+        font-size: 30px;
     }
 }
 
-@media screen and (max-width: 912px) {
-    main {
-        margin-top: 300px;
-        display: grid;
-        margin-left: 70px;
+@media screen and (max-width: 393px){
+    .grid {
+        height: 80vh;
     }
-}
 
-@media screen and (max-width: 768px) {
-    main {
-        margin-top: 200px;
-        display: grid;
-        margin-left: -5px;
+    div #numbers button {
+        padding: 10px;
+        font-size: 16px;
     }
-    #answer {
-        font-size: 50px;
-    }
-    div #numbers {
+
+    div .title{
         font-size: 15px;
     }
-    div #result{
-        height: 80px;
+    div #numbers #operations {
+        padding: 1px;
+        margin-left: -30px;
+    }
+    div #numbers #last .items, #equal{
+        padding: 10px;
+        color: #679289;
     }
 }
 
-@media screen and (max-width: 540px) {
-    main {
-        margin-top: 50px;
-        display: grid;
-        margin-left: -5px;
-    }
+@media screen and (max-width: 375px){
     .grid {
-        width: 140%;
-    }
-    #answer {
-        font-size: 60px;
-    }
-    div #numbers {
-        font-size: 15px;
-    }
-    div #result{
-        height: 80px;
+        height: 80vh;
     }
 }
 
-@media screen and (max-width: 500px) {
-    main {
-        margin-top: 100px;
-        display: grid;
-        margin-left: 10px;
-    }
-    .links {
-        display: none;
-    }
-    .grid {
-        width: 80%;
-        background-color: #1b3f3d;
-        border: none;
-        grid-column: 2;
-    }
-}
 
-@media screen and (max-width: 375px) {
-    main {
-        margin-top: 30px;
-        display: grid;
-    }
-    .links {
-        display: none;
-    }
-    .grid {
-        width: 80%;
-        background-color: #1b3f3d;
-        padding: 25px;
-        border: none;
-        border-radius: 50px;
-        grid-column: 2;
-    }
-}
-
-@media screen and (max-width: 280px) {
-    main {
-        margin-top: 20px;
-        display: grid;
-    }
-    .grid {
-        width: 50%;
-        background-color: #1b3f3d;
-        border: none;
-        border-radius: 50px;
-        grid-column: 2;
-    }
-    #answer {
-        font-size: 20px;
-    }
-    div #numbers {
-        font-size: 1px;
-    }
-    div #result{
-        height: 40px;
-    }
-}
 
